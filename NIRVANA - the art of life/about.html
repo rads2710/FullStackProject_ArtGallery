@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/resnav.css">
+  <link rel="shortcut icon" type="image/png" href="img/niricon.png">
+  <title>About Nirvana</title>
+  <style>
+    .margin-left {
+      margin-left: 20px;
+      text-decoration: none;
+      padding-top: 4px;
+    }
+
+
+    .margin-left i {
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.801);
+      /* margin-top: 2px; */
+    }
+
+    .margin-left i:hover {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      background-color: rgba(6, 104, 250, 0.397);
+    }
+
+    .opa {
+
+      background-color: rgba(128, 128, 128, 0.555);
+    }
+
+    .sec-3 {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .sec-3 ul {
+      list-style: none;
+      margin: 20px;
+    }
+
+    .sec-3 ul li {
+
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      padding: 20px;
+      background-color: #424242;
+      border-radius: 50%;
+      margin: 20px;
+      margin-right: 20px;
+    }
+
+    .sec-3 ul li i {
+      color: white;
+      font-size: 24px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .sec-3 ul li:nth-child(1):hover {
+      background-color: #3b5999;
+    }
+
+    .sec-3 ul li:nth-child(2):hover {
+      background-color: #55acee;
+    }
+
+    .sec-3 ul li:nth-child(3):hover {
+      background-color: #dd4b39;
+    }
+
+    .sec-3 ul li:nth-child(4):hover {
+      background-color: #0077B5;
+    }
+
+    .sec-3 ul li:nth-child(5):hover {
+      background-color: #ea4c89;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="img/niricon.png" style="height: 35px; width: 35px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Artworks
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sculpture.html">Sculpture</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="photography.html">Photography</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="painting.html">Painting</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="new media.html">New Media</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+
+      </ul>
+
+
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#loginModal" style="border-radius: 10rem;
+                    transition: all .2s;border: none;">Login</button>
+        <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#signupModal" style="border: none;border-radius: 10rem;
+              transition: all .2s;">SignUp</button>
+        <a href="#" class="margin-left"><i class="fa fa-shopping-cart "></i></a>
+        <a href="#" class="margin-left"><i class="fa fa-user" aria-hidden="true"></i></a>
+
+      </div>
+
+    </div>
+  </nav>
+ <!-- Login Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">Login to Nirvana</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+    
+     <div class="modal-body">
+
+       <div class="container container-1s">
+
+         <form class="forms" id="forms">
+           <div class="form-datas">
+             <label for="usernames">Username</label>
+             <input type="text" id="usernames" placeholder="Enter Username">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <div class="form-datas">
+             <label for="emails">Email Id</label>
+             <input type="text" id="emails" placeholder="Enter Email Id">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <div class="form-datas">
+             <label for="password">Password</label>
+             <input type="password" id="password" placeholder="Enter Password">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+
+           <button type="submit" class="btn btn-primary">Login</button>
+         </form>
+       </div>
+       <script src="js/login.js"></script>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">Get a Nirvana Account</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+
+       <div class="container container-1">
+
+         <form class="form" id="form">
+           <div class="form-data">
+             <label for="username">Username</label>
+             <input type="text" id="username" placeholder="Enter Username">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <div class="form-data">
+             <label for="email">Email Id</label>
+             <input type="text" id="email" placeholder="Enter Email Id">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <div class="form-data">
+             <label for="password1">Password</label>
+             <input type="password" id="password1" placeholder="Enter Password">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <div class="form-data">
+             <label for="password2">Re-Enter Password</label>
+             <input type="password" id="password2" placeholder="Enter Password Again">
+             <i class="fa fa-check-circle" aria-hidden="true"></i>
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+             <small>Error Msg</small>
+           </div>
+           <button type="submit" class="btn btn-primary">Sign Up</button>
+         </form>
+       
+       </div>
+       <script src="js/signup.js"></script>
+     </div>
+   </div>
+ </div>
+
+</div>
+  <br><br><br>
+
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">It all started with just a painting. <span class="text-muted">Art is
+            addicting,isn't it?</span></h2>
+        <p class="lead">With the motive to promote artistic tempraments among the youth, here we are promoting young
+          artists to lay their hands in this exotic field of happiness.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="img/aboutt.jpg" alt="">
+
+      </div>
+    </div>
+    <br>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Join us, Become a member!! <span class="text-muted"> Get some amazing
+            discounts.</span></h2>
+        <p class="lead">With some exclusive perks and discounts for the Nirvana Members, We make sure that we stay a
+          closely knitted family for the whole lifetime.So, what are you waiting for,sign up and get notified weekly.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="img/discount.jpg" alt="">
+
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">It's us. <span class="text-muted">The team of two young girls!!</span></h2>
+        <p class="lead"> Coming from the land that is known for its culture,us,Akshita and Radhika are trying to enhance
+          the aura of your living places by providing you these beautiful pieces.
+          For any query or suggestions,contact us.
+
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="img/final.jpg" alt="">
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <footer class="container-fluid  opa">
+    <h2 class="text-center">Contact Us</h2>
+    <section class="sec-3">
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/radhika-singh-811746155/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/rads2710/?hl=en"><i class="fa fa-dribbble"></i></a></li>
+
+      </ul>
+
+    </section>
+    <p class="text-center">&copy&nbsp;2020-2021 Nirvana · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <p class="text-center"><a href="#">Back to top</a></p>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
